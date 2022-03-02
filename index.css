@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    background: #020202;
+    cursor: crosshair;
+    font-family: 'Poppins', sans-serif;
+}
+canvas{display:block}
+
+h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 3em;
+    font-weight: 700;
+    -webkit-user-select: none;
+    user-select: none;
+    animation: opening 4s ease;
+}
+
+.login {
+    position: absolute;
+    top: 75%;
+    left: 45%;
+    width: 100px;
+    padding: 10px 15px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.login:hover {
+    background-color: white;
+    color: black;
+    transition: .4s;
+    font-weight: 700;
+}
+
+.login:checked{
+    opacity: .6;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+@keyframes opening {
+    0% {
+        /* display: none; */
+        top: -50%;
+    }
+/* 
+    50% {
+        left: 0%;
+    }  */
+
+    100% {
+        left: 50%;
+    }
+}
