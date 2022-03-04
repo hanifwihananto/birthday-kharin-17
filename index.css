@@ -3,6 +3,7 @@ body {
     background: #020202;
     cursor: crosshair;
     font-family: 'Poppins', sans-serif;
+    /* text-align: center; */
 }
 canvas{display:block}
 
@@ -22,12 +23,16 @@ h1 {
 .login {
     position: absolute;
     top: 75%;
-    left: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 10px auto;
     width: 100px;
     padding: 10px 15px;
     text-align: center;
     border: 2px solid white;
     border-radius: 10px;
+    background-color: none;
+    color: none;
     cursor: pointer;
 }
 
@@ -38,7 +43,7 @@ h1 {
     font-weight: 700;
 }
 
-.login:checked{
+.login:active{
     opacity: .6;
 }
 
