@@ -3,7 +3,6 @@ body {
     background: #020202;
     cursor: crosshair;
     font-family: 'Poppins', sans-serif;
-    /* text-align: center; */
 }
 canvas{display:block}
 
@@ -17,33 +16,31 @@ h1 {
     font-weight: 700;
     -webkit-user-select: none;
     user-select: none;
-    animation: opening 4s ease;
+    animation: text 4s ease;
 }
 
-.login {
+.start {
     position: absolute;
     top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin: 10px auto;
     width: 100px;
     padding: 10px 15px;
     text-align: center;
     border: 2px solid white;
     border-radius: 10px;
-    background-color: none;
-    color: none;
     cursor: pointer;
+    animation: start 4s ease;
 }
 
-.login:hover {
+.start:hover {
     background-color: white;
     color: black;
     transition: .4s;
     font-weight: 700;
 }
 
-.login:active{
+.start:active{
     opacity: .6;
 }
 
@@ -53,17 +50,12 @@ a {
     font-size: 18px;
 }
 
-@keyframes opening {
-    0% {
-        /* display: none; */
-        top: -50%;
-    }
-/* 
-    50% {
-        left: 0%;
-    }  */
+@keyframes text {
+    0% {top: -50%;}
+    100% {left: 50%;}
+}
 
-    100% {
-        left: 50%;
-    }
+@keyframes start {
+    0% {left: -50%;}
+    100% {top: 75%;}
 }
