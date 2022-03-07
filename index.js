@@ -1,3 +1,8 @@
+$(window).on('load', function() { 
+  $(".loader").delay(500).fadeOut(); 
+  $("#preloader").delay(800).fadeOut("slow");
+});
+
 // helper functions
 const PI2 = Math.PI * 2
 const random = (min, max) => Math.random() * (max - min + 1) + min | 0
