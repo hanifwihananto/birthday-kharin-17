@@ -1,54 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HAPPY BIRTHDAY KHARIN</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KHARIN | LOGIN</title>
 
-    <!-- Link CSS -->
-    <link rel="stylesheet" href="login.css">
-    
     <!-- Fav Icon -->
     <link rel="shortcut icon" href="../img/birthday-cake.png">
-</head>
-<body>
+
+    <!-- LINK FontAwesome -->
+    <script src="https://kit.fontawesome.com/0b20dfeace.js" crossorigin="anonymous"></script>
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
     <div class="container">
-        <section class="left">
-            <div class="img"></div>
-        </section>
-
-        <section class="right">
-            <div class="login-content">
-                <img class="avatar" src="../img/avatar.jpg" alt="Avatar">
-                <form id="form" class="form">
-                    
-                    <h2>Welcome</h2>
-                    
-                    <div class="input-user">
-                        <div class="i"></div>
-                        <div class="username">
-                            <h5>Username</h5>
-                            <input type="text" class="input" id="user">
-                        </div>
-                    </div>
-
-                    <div class="input-pass">
-                        <div class="i"></div>
-                        <div class="password">
-                            <h5>Password</h5>
-                            <input type="text" class="input" id="pass">
-                        </div>
-                    </div>
-
-                    <div class="btn-login">
-                        <input type="button" class="btn" value="LOGIN" onclick="validasi()">
-                    </div>
-                </form>
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form method="post" class="sign-in-form" id="form">
+            <h2 class="title">Hallo Dedecuu</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" id="user" />
             </div>
-        </section>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" id="pass" />
+              <span class="icon-eye">
+                <i class="fas fa-eye" id="show"></i>
+                <i class="fas fa-eye-slash" id="hide"></i>
+              </span>
+            </div>
+            <input type="button" value="Login" class="btn solid" id="btnLogin" />
+            <p class="social-text">Kamu lupa? hubungi akun dibawah yahh</p>
+            <div class="social-media">
+              <a href="https://wa.me/+6287760103535" target="_blank" class="social-icon">
+                <i class="fa-solid fa-phone"></i>
+              </a>
+              <a href="https://www.instagram.com/hanifwihananto" target="_blank" class="social-icon">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/hanifwihananto" target="_blank" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </div>
+          </form>
+
+          <form action="#" class="sign-up-form">
+            <h2 class="title">Happy Birthday</h2>
+            <p class="social-text">Hope you best</p>
+            <p>option 1 video youtube</p>
+            <p>option 2 game puzzle</p>
+            <p>option 3 card</p>
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>Tau Ga Sih ?</h3>
+            <p>
+              Ada sesuatu nih buat kamu. Ayo segera dibuka yahh
+            </p>
+            <button class="btn transparent" id="sign-up-btn">
+              Click Me
+            </button>
+          </div>
+          <img src="img/birthday_girl.svg" class="image" alt="" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>Sudah dilihat ?</h3>
+            <p>
+              Kalau sudah ayo segera masuk dan temukan hal menarik untuk kamu
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+              Masuk
+            </button>
+          </div>
+          <img src="img/birthday_cake.svg" class="image" alt="" />
+        </div>
+      </div>
     </div>
 
     <script src="login.js"></script>
-</body>
+    <script src="sweetalert2.all.min.js"></script>
+    
+    
+  </body>
 </html>
