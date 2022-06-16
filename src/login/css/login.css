@@ -39,6 +39,42 @@ input {
   z-index: 5;
 }
 
+/* Box Gift */
+.circle {
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	border-radius: 100%;
+	background-color: #F38BA0;
+	bottom: -150px;
+	right: 210px;	
+	filter: blur(70px) opacity(60%);
+	z-index: -99;
+}
+
+h2.box {
+	font-family: 'Roboto', sans-serif;
+	font-size: 50px;
+	text-align: center;
+	font-weight: bold;
+	color: #E11D26;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 25%);
+}
+
+.top-gift{
+	margin-top: 80px;
+}
+
+.bottom-gift {	
+	margin-top: 40px;
+}
+
+@media (max-width: 570px) {
+	.circle {
+		right: 0;
+	}
+}
+
 form {
   display: flex;
   align-items: center;
@@ -285,6 +321,7 @@ form.sign-in-form {
   pointer-events: all;
 }
 
+/* Tablet */
 @media (max-width: 870px) {
   .container {
     min-height: 800px;
@@ -388,6 +425,7 @@ form.sign-in-form {
   }
 }
 
+/* Phone */
 @media (max-width: 570px) {
   form {
     max-width: 400px;
