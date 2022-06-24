@@ -201,6 +201,7 @@ form.sign-in-form {
 .btn:hover {
   background-color: #4d84e2;
 }
+
 .panels-container {
   position: absolute;
   height: 100%;
@@ -283,7 +284,6 @@ form.sign-in-form {
 }
 
 /* ANIMATION */
-
 .container.sign-up-mode:before {
   transform: translate(100%, -50%);
   right: 52%;
@@ -425,7 +425,7 @@ form.sign-in-form {
   }
 }
 
-/* Phone */
+/* Mobile */
 @media (max-width: 570px) {
   form {
     max-width: 400px;
@@ -435,9 +435,11 @@ form.sign-in-form {
   .image {
     display: none;
   }
+
   .panel .content {
     padding: 0.5rem 1rem;
   }
+  
   .container {
     padding: 1.5rem;
   }

@@ -28,7 +28,6 @@ class Birthday {
     this.height = canvas.height = window.innerHeight
     this.spawnC = this.height * .1
     this.spawnD = this.height * .5
-    
   }
   
   onClick(evt) {
@@ -44,8 +43,7 @@ class Birthday {
         random(0, 260),
         random(30, 110)))
           
-     this.counter = -1
-     
+     this.counter = -1    
   }
   
   update(delta) {
@@ -71,7 +69,6 @@ class Birthday {
 
     // remove the dead fireworks
     if (this.fireworks.length > 1000) this.fireworks = this.fireworks.filter(firework => !firework.dead)
-
   }
 }
 
@@ -136,21 +133,18 @@ class Firework {
       ctx.arc(this.x, this.y, 1, 0, PI2, false)
       ctx.fill()
     }
-
   }
 }
 
 let canvas = document.getElementById('birthday')
 let ctx = canvas.getContext('2d')
-
 let then = timestamp()
-
 let birthday = new Birthday
 window.onresize = () => birthday.resize()
 document.onclick = evt => birthday.onClick(evt)
-document.ontouchstart = evt => birthday.onClick(evt)
+document.ontouchstart = evt => birthday.onClick(evt);
 
-  ;(function loop(){
+(function loop(){
   	requestAnimationFrame(loop)
 
   	let now = timestamp()
@@ -158,6 +152,4 @@ document.ontouchstart = evt => birthday.onClick(evt)
 
     then = now
     birthday.update(delta / 1000)
-  	
-
   })()
